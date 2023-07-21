@@ -41,7 +41,8 @@ const x = '나는 ';
 const y = ' 입니다.';
 
 console.log(x + name + y); //문자형과 문자형이 더해지면 하나의 문자로 합쳐짐
-console.log(x + age + '살' +y); //숫자형과 문자형이 더해지면 문자형으로 변환됨 
+console.log(x + age + '살' +y); //숫자형과 문자형이 더해지면 문자형으로 변환됨 g
+
 
 
 
