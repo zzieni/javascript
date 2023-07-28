@@ -91,3 +91,48 @@ function showError2(){
 }
 const result2 = showError2();
 console.log(result2);
+
+
+//1.함수 표현식 : 순차적으로 코드에 도달하면 함수가 생성되며, 함수 생전 전에 호출이 불가함
+// showError3();
+
+// let showError3 = function(){
+//     console.log('error3');
+// }
+
+
+//2.함수 선언문 :  어디서든 함수 호출이 가능함, 코드가 순차적으로 실행 되지만 자바스크립트는 실행전 초기화 단계에서 함수의 모든선언을 찾아 실행시키기 때문이다. 
+showError4();
+function showError4 (){
+    console.log('error4');
+}
+
+//3.화살표 함수
+let showError5 = () => {
+    console.log('error5');
+}
+showError5();
+
+/*
+function add(num1, num2){
+    return num1 + num2;
+}
+const result = add(2, 3);
+
+const add2 = function(num1, num2){
+    const result = num1 + num2;
+    return result
+}
+
+//function 제거 및 =>
+const add2 = (num1, num2) => {
+    const result = num1 + num2;
+    return result
+}
+
+const add2 = (num1, num2) => {
+    return num1 + num2;
+}
+
+const add2 = (num1, num2) => num1 + num2;
+*/
